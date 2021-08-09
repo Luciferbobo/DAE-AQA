@@ -11,7 +11,7 @@ MTL-AQA dataset was orignially presented in the paper __What and How Well You Pe
 
 1.[[Google Drive](https://drive.google.com/file/d/)]
 
-2.[[Baidu Drive](https://pan.baidu.com/s/)](Password:1234)
+2.[[Baidu Drive](https://pan.baidu.com/s/1-EH7Q0LtaDCicateuT9mFg)](Password:SEU1)
 
 The whole data structure should be:
 ```
@@ -26,7 +26,7 @@ JIGSAWS dataset was presented in the paper __Jhu-isi gesture and skill assessmen
 
 1.[[Google Drive](https://drive.google.com/file/d/)]
 
-2.[[Baidu Drive](https://pan.baidu.com/s/)](Password:1234)
+2.[[Baidu Drive](https://pan.baidu.com/s/1-EH7Q0LtaDCicateuT9mFg)](Password:SEU1)
 
 ## Training
 
@@ -48,5 +48,5 @@ We provided a pre-trained DAE-MT model weight with a correlation coefficient of 
 
 1.[[Google Drive](https://drive.google.com/file/d/)]
 
-2.[[Baidu Drive](https://pan.baidu.com/s/)](Password:1234)
+2.[[Baidu Drive](https://pan.baidu.com/s/1-EH7Q0LtaDCicateuT9mFg)](Password:SEU1)
 
