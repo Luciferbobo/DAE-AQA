@@ -1,7 +1,9 @@
 # DAE_AQA
 It is an open source program reference to paper **Auto-Encoding Score Distribution Regression for Action Quality Assessment**.
 
- ![16](Fig/16.gif)
+<div align=center>
+<img src="Fig/16.gif" width="3" height="3" />
+</div>
 
  ![DAE Structure](Fig/Structure.png)
 
