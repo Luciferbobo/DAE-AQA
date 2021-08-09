@@ -2,8 +2,9 @@
 It is an open source program reference to paper **Auto-Encoding Score Distribution Regression for Action Quality Assessment**.
 
 <div align=center>
-![DAE Structure](Fig/16.gif)
+<img src="https://github.com/BIT-MJY/Active-SLAM-Based-on-Information-Theory/blob/master/img/1-2.png" width="180" height="105"> width="180" height="105"/>
 </div>
+
 
  ![DAE Structure](Fig/Structure.png)
 
