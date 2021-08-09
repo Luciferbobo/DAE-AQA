@@ -2,7 +2,7 @@
 It is an open source program reference to paper **Auto-Encoding Score Distribution Regression for Action Quality Assessment**.
 
 <div align=center>
-<img src="https://github.com/InfoX-SEU/DAE_AQA/blob/main/Fig/16.gif" width="30" height="30"> 
+<img src="https://github.com/InfoX-SEU/DAE_AQA/blob/main/Fig/16.gif" width="180" height="120"> 
 </div>
 
 
