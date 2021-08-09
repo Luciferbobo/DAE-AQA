@@ -1,11 +1,11 @@
 # DAE_AQA
-It is an open source program reference to paper **Auto-Encoding Score Distribution Regression for Action Quality Assessment**. DAE is a model for action quality assessment(AQA). DAE takes both advantages of regression algorithms and label distribution learning (LDL). Specifically, it encodes videos into distributions and uses the reparameterization trick in variational auto-encoders (VAE) to sample scores, which establishes a more accurate mapping between video and score. 
-
+It is an open source program reference to paper **Auto-Encoding Score Distribution Regression for Action Quality Assessment**. 
  ![DAE Structure](Fig/Structure.png)
  
 ## 1.Introduction
 
-DAE can be appled to many scenarios. e.g, judgment of accuracy of an operation or score estimation of an diving athlete’s performance.
+DAE is a model for action quality assessment(AQA). It takes both advantages of regression algorithms and label distribution learning (LDL). Specifically, it encodes videos into distributions and uses the reparameterization trick in variational auto-encoders (VAE) to sample scores, which establishes a more accurate mapping between video and score. 
+It can be appled to many scenarios. e.g, judgment of accuracy of an operation or score estimation of an diving athlete’s performance.
 
  <div align=center>
 <img src="https://github.com/InfoX-SEU/DAE_AQA/blob/main/Fig/16.gif" width="405" height="240"> 
