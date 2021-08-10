@@ -47,7 +47,7 @@ training DAE-MT model:
 $ python DAE_MT.py --log_info=DAE-MT --num_workers=16 --gpu=0 --train_batch_size=8 --test_batch_size=32 --num_epochs=100
 ~~~
 
-All parameters are set in config.py. Considering that the memory of video processing on GPU is quite large, we suggest using small batch for training.qwq
+All default parameters are set in config.py. Considering that the memory of video processing on GPU is quite large, we suggest using small batch for training.
 
 ## 4.Testing
 
@@ -58,6 +58,6 @@ We provided a pre-trained DAE-MT model weight with a correlation coefficient of 
 2.[[Baidu Drive](https://pan.baidu.com/s/1-EH7Q0LtaDCicateuT9mFg)](Password:SEU1)
 
 ## CONTACT US:
-If you have any questiones or meat any bugs, please contact us! 
+If you have any questiones or meet any bugs, please contact us! QwQ
 
 E-mail: 1814970127@qq.com
