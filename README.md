@@ -57,5 +57,6 @@ We provided a pre-trained DAE-MT model weight with a correlation coefficient of 
 
 2.[[Baidu Drive](https://pan.baidu.com/s/1-EH7Q0LtaDCicateuT9mFg)](Password:SEU1)
 
-# CONTACT US:
-If you have any questiones ,please contact us! 1814970127@qq.com
+## CONTACT US:
+If you have any questiones or meat any bugs, please contact us! 
+E-mail: 1814970127@qq.com
