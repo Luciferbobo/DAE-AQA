@@ -39,12 +39,12 @@ JIGSAWS dataset was presented in the paper __Jhu-isi gesture and skill assessmen
 
 training DAE model:
 ~~~shell
-$ python DAE.py
+$ python DAE.py --log_info=DAE --num_workers=16 --gpu=0 --train_batch_size=8 --test_batch_size=32 --num_epochs=100
 ~~~
 
 training DAE-MT model:
 ~~~shell
-$ python DAE-MT.py
+$ python DAE_MT.py --log_info=DAE-MT --num_workers=16 --gpu=0 --train_batch_size=8 --test_batch_size=32 --num_epochs=100
 ~~~
 
 All parameters are set in config.py. Considering that the memory of video processing on GPU is quite large, we suggest using small batch for training.qwq
