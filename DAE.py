@@ -53,6 +53,7 @@ if __name__ == '__main__':
         for split in ['train', 'test']:
             true_scores = []
             pred_scores = []
+            sigma = []
 
             if split == 'train':
                 i3d.eval()
@@ -74,13 +75,15 @@ if __name__ == '__main__':
                     clip_feats[:, i] = i3d(videos[:, :, 10 * i:10 * i + 16, :, :]).squeeze(2)
                 clip_feats[:, 9] = i3d(videos[:, :, -16:, :, :]).squeeze(2)
 
-                preds, mu, _ = dae(clip_feats.mean(1))
+                preds, mu, sigmas = dae(clip_feats.mean(1))
                 preds = preds.view(-1)
+                sigmas = sigmas.view(-1)
                 mu = mu.view(-1)               
                 pred_scores.extend([i.item() for i in preds])
+                sigma.extend([i.item() for i in sigmas])
 
                 if split == 'train':
-                    loss = loss_function(preds, data['final_score'].float().cuda(), mu)
+                    loss = loss_function(sigma, data['final_score'].float().cuda(), mu)
                     optimizer.zero_grad()
                     loss.backward()
                     optimizer.step()
