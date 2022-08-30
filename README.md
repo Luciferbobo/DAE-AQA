@@ -1,12 +1,12 @@
 # DAE-AQA
-It is an open source program reference to paper **Auto-Encoding Score Distribution Regression for Action Quality Assessment**. 
-https://arxiv.org/abs/2111.11029
+PyTorch implementation of paper **Auto-Encoding Score Distribution Regression for Action Quality Assessment**. 
+[[Project Website]](https://github.com/InfoX-SEU/DAE-AQA) [[Paper]](https://arxiv.org/abs/2111.11029) 
+
  ![DAE Structure](Fig/structure.png)
  
 ## 1.Introduction
 
-DAE is a model for action quality assessment(AQA). It takes both advantages of regression algorithms and label distribution learning (LDL). Specifically, it encodes videos into distributions and uses the reparameterization trick in variational auto-encoders (VAE) to sample scores, which establishes a more accurate mapping between video and score. 
-It can be appled to many scenarios. e.g, judgment of accuracy of an operation or score estimation of an diving athlete’s performance.
+The action quality assessment (AQA) of videos is a challenging vision task since the relation between videos and action scores is difficult to model. Thus, AQA has been widely studied in the literature. Traditionally, AQA is treated as a regression problem to learn the underlying mappings between videos and action scores. But previous methods ignored data uncertainty in AQA dataset. To address aleatoric uncertainty, we further develop a plug-and-play module Distribution Auto-Encoder (DAE). Specifically, it encodes videos into distributions and uses the reparameterization trick in variational auto-encoders (VAE) to sample scores, which establishes a more accurate mapping between videos and scores. Meanwhile, a likelihood loss is used to learn the uncertainty parameters. We plug our DAE approach into MUSDL and CoRe. Experimental results on public datasets demonstrate that our method achieves state-of-the-art on AQA-7, MTL-AQA, and JIGSAWS datasets. 
 
  <div align=center>
 <img src="https://github.com/InfoX-SEU/DAE_AQA/blob/main/Fig/16.gif" width="405" height="240"> 
@@ -36,7 +36,7 @@ JIGSAWS dataset was presented in the paper __Jhu-isi gesture and skill assessmen
 
 2.[[Baidu Drive](https://pan.baidu.com/s/1-EH7Q0LtaDCicateuT9mFg)](Password:SEU1)
 
-## 3.Training
+## 3.Running
 
 training DAE model:
 ~~~shell
@@ -50,13 +50,6 @@ $ python DAE_MT.py --log_info=DAE-MT --num_workers=16 --gpu=0 --train_batch_size
 
 All default parameters are set in config.py. Considering that the memory of video processing on GPU is quite large, we suggest using small batch for training.
 
-## 4.Testing
-
-We provided a pre-trained DAE-MT model weight with a correlation coefficient of 0.9449 on MTL-AQA test dataset. You can download it through the following links:
-
-1.[[Google Drive](https://drive.google.com/drive/folders/1J_OO6UNJ27WLpjm6nRwqp9WIq0bUeINY?usp=sharing)]
-
-2.[[Baidu Drive](https://pan.baidu.com/s/1-EH7Q0LtaDCicateuT9mFg)](Password:SEU1)
 
 ## CONTACT US:
 If you have any questiones or meet any bugs, please contact us! 
