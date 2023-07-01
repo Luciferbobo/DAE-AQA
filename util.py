@@ -7,7 +7,7 @@ import math
 import torch.nn as nn
 import numpy as np
 
-alpha,beta=torch.Tensor([0.6]), torch.Tensor([0.4])
+alpha,beta=torch.Tensor([0.6]).cuda(), torch.Tensor([0.4]).cuda()
 
 def get_logger(filepath, log_info):
     logger = logging.getLogger(filepath)
@@ -24,6 +24,9 @@ def log_and_print(logger, msg):
     print(msg)
 
 def loss_function_v2(sigma, x, mu):
+    sigma = torch.Tensor(sigma).cuda()
+    x = torch.Tensor(x).cuda()
+    mu = torch.Tensor(mu).cuda()
     MSE_loss = nn.MSELoss(reduction='sum')
     rec_loss = alpha/(sigma)*MSE_loss(x, mu)
     sup_loss = beta*torch.log(sigma)
