@@ -16,7 +16,7 @@ import logging
 from models import InceptionI3d,DAE
 from dataloader import load_image_train,load_image,VideoDataset,get_dataloaders
 from config import get_parser
-from util import get_logger,log_and_print,loss_function
+from util import get_logger,log_and_print,loss_function,loss_function_v2
 
 sys.path.append('../')
 torch.backends.cudnn.enabled = True
@@ -83,7 +83,7 @@ if __name__ == '__main__':
                 sigma.extend([i.item()**2 for i in sigmas])
 
                 if split == 'train':
-                    #loss = loss_function(sigma, data['final_score'].float().cuda(), mu)
+                    #loss = loss_function_v2(sigma, data['final_score'].float().cuda(), mu)
                     loss = loss_function(preds, data['final_score'].float().cuda(), mu)
                     optimizer.zero_grad()
                     loss.backward()
