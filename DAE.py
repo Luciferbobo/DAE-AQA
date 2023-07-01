@@ -80,10 +80,11 @@ if __name__ == '__main__':
                 sigmas = sigmas.view(-1)
                 mu = mu.view(-1)               
                 pred_scores.extend([i.item() for i in preds])
-                sigma.extend([i.item() for i in sigmas])
+                sigma.extend([i.item()**2 for i in sigmas])
 
                 if split == 'train':
-                    loss = loss_function(sigma, data['final_score'].float().cuda(), mu)
+                    #loss = loss_function(sigma, data['final_score'].float().cuda(), mu)
+                    loss = loss_function(preds, data['final_score'].float().cuda(), mu)
                     optimizer.zero_grad()
                     loss.backward()
                     optimizer.step()

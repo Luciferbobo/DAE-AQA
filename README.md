@@ -48,10 +48,3 @@ training DAE-MT model:
 $ python DAE_MT.py --log_info=DAE-MT --num_workers=16 --gpu=0 --train_batch_size=8 --test_batch_size=32 --num_epochs=100
 ~~~
 
-All default parameters are set in config.py. Considering that the memory of video processing on GPU is quite large, we suggest using small batch for training.
-
-
-## CONTACT US:
-If you have any questiones or meet any bugs, please contact us! 
-
-E-mail: byz@seu.edu.cn
